@@ -3,6 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Home from '../Home';
 import Category from '../Category';
+import Help from '../Help';
+import Profile from '../Profile';
 import {colors} from '../../styles'
 
 const Tab = createBottomTabNavigator();
@@ -23,6 +25,15 @@ const BottomTab = () => {
                         iconName = 'list'
                     }
 
+                    
+                    if(route.name === 'help'){
+                        iconName = 'question'
+                    }
+
+                    if(route.name === 'profile'){
+                        iconName = 'user'
+                    }
+
                     return <Icon name={iconName} size={25} style={{color: color}} />
                 }
             })}
@@ -37,6 +48,8 @@ const BottomTab = () => {
 
             <Tab.Screen name='home' component={Home}/>
             <Tab.Screen name='category' component={Category}/>
+            <Tab.Screen name='help' component={Help}/>
+            <Tab.Screen name='profile' component={Profile}/>
         </Tab.Navigator>
     )
 }

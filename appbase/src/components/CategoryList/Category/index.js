@@ -1,0 +1,26 @@
+import React from 'react';
+import { View, Image, Text, TouchableOpacity } from 'react-native';
+import style from './style'
+
+const Category = ({navigation, category}) => {
+
+    const openList = () => {
+        navigation.navigate('ProductDetails', {
+            category: category
+        })
+    }
+
+    return(
+        <View style={style.container}>
+            <TouchableOpacity key={category.id} onPress={openList} style={style.touchable}>
+                <Image source={{uri: category.image}} style={style.image}/>
+                <View>
+                    <Text style={style.description}>{category.description}</Text>
+                    <Text style={style.items}>{category.items} item(s)</Text>
+                </View>
+            </TouchableOpacity>
+        </View>
+    )
+}
+
+export default Category;
