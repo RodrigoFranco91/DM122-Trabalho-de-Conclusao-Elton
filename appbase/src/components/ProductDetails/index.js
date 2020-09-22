@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { View, Image, Button, Text} from 'react-native';
 import { colors } from '../../styles'
 import style from './style';
+import { StackActions } from '@react-navigation/native';
 import { useCounter } from '../../contexts/cart';
 
 const ProductDetails = ( {route, navigation } ) => {
@@ -17,8 +18,9 @@ const ProductDetails = ( {route, navigation } ) => {
 
     const addToCart = () => {
         //Faz algo aqui
+        const action = StackActions.pop(1);
         setCounter(counter + 1)
-        navigation.navigate('HomeScreen')
+        navigation.dispatch(action)
     }
 
     return(

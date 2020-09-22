@@ -15,13 +15,13 @@ const CategoryList = ( { navigation } ) => {
                   "id": 1,
                   "image": "https://images.neimanmarcus.com/ca/1/product_assets/B/3/T/5/S/NMB3T5S_au.jpg",
                   "description": "Some \"description\" 1",
-                  "price": "10"
+                  "price": "R$ 10.00"
                 },
                 {
                   "id": 2,
                   "image": "https://images.neimanmarcus.com/ca/1/product_assets/B/3/T/5/S/NMB3T5S_au.jpg",
                   "description": "Some \"description\" 2",
-                  "price": "20"
+                  "price": "R$ 20.00"
                 }
               ]
             },
@@ -35,19 +35,19 @@ const CategoryList = ( { navigation } ) => {
                   "id": 1,
                   "image": "https://images.neimanmarcus.com/ca/1/product_assets/B/3/T/5/S/NMB3T5S_au.jpg",
                   "description": "Some \"description\" 1",
-                  "price": "10"
+                  "price": "R$ 10.00"
                 },
                 {
                   "id": 2,
                   "image": "https://images.neimanmarcus.com/ca/1/product_assets/B/3/T/5/S/NMB3T5S_au.jpg",
                   "description": "Some \"description\" 2",
-                  "price": "20"
+                  "price": "R$ 20.00"
                 },
                 {
                   "id": 3,
                   "image": "https://images.neimanmarcus.com/ca/1/product_assets/B/3/T/5/S/NMB3T5S_au.jpg",
                   "description": "Some \"description\" 3",
-                  "price": "30"
+                  "price": "R$ 30.00"
                 }
               ]
             },
