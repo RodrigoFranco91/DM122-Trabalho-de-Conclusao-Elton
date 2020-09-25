@@ -18,5 +18,4 @@ const AppECom = () => {
         </SafeAreaView>
     )
 }
-
 export default AppECom;
