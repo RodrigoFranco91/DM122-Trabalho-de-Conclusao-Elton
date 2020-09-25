@@ -8,10 +8,10 @@ const Help = () => {
         <>
             <Header />
             <ScrollView style={style.container}>
-                <Text>Pedido</Text>
-                <Text>Pagamento</Text>
-                <Text>Entrega</Text>
-                <Text>Contato</Text>
+                <Text style={style.text}>Pedido</Text>
+                <Text style={style.text}>Pagamento</Text>
+                <Text style={style.text}>Entrega</Text>
+                <Text style={style.text}>Contato</Text>
             </ScrollView>
         </>
     )
